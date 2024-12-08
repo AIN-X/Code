@@ -15,8 +15,8 @@ int main()
         for (int &c : row)
             cin >> c, c = c ? c : INT_MAX;
 
-    vector<int> vis(n, 0);
-    vis[0] = 1;
+    vector<bool> vis(n, false);
+    vis[0] = true;
 
     cout << "Edges in MST:\n";
     for (int k = 1; k < n; k++)
@@ -44,7 +44,7 @@ int main()
             return 0;
         }
 
-        vis[v] = 1;
+        vis[v] = true;
         min_cost += min_edge;
         cout << "(" << u + 1 << ", " << v + 1 << ") cost=" << min_edge << "\n";
     }
