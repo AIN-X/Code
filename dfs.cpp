@@ -20,7 +20,7 @@ int main()
     s.push(0);
     visited[0] = true;
 
-    cout << "The result of DFS is: ";
+    cout << "DFS result: ";
     while (!s.empty())
     {
         int node = s.top();
