@@ -20,7 +20,7 @@ int main()
     q.push(0);
     visited[0] = true;
 
-    cout << "The result of BFS is: ";
+    cout << "BFS result: ";
     while (!q.empty())
     {
         int node = q.front();
