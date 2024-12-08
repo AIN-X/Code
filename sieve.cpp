@@ -5,7 +5,6 @@ using namespace std;
 void sieveOfEratosthenes(int n)
 {
     vector<bool> prime(n + 1, true);
-
     for (int p = 2; p * p <= n; p++)
     {
         if (prime[p])
@@ -21,9 +20,7 @@ void sieveOfEratosthenes(int n)
     for (int p = 2; p <= n; p++)
     {
         if (prime[p])
-        {
             cout << p << " ";
-        }
     }
     cout << endl;
 }
